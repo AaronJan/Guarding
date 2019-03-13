@@ -1,0 +1,40 @@
+{
+  "name": "guarding",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AaronJan/guarding.git"
+  },
+  "keywords": [
+    "graceful",
+    "node"
+  ],
+  "author": {
+    "name": "AaronJan",
+    "url": "https://github.com/AaronJan"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/AaronJan/guarding/issues"
+  },
+  "homepage": "https://github.com/AaronJan/guarding#readme",
+  "dependencies": {
+    "debug": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.2",
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.11.1",
+    "jest": "^24.4.0",
+    "ts-jest": "^24.0.0",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.3.3333"
+  }
+}
