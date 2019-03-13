@@ -1,4 +1,4 @@
-export type CleanupResponse = void | boolean;
+export type CleanupResponse = any;
 
 export interface SyncCleanup {
   (): CleanupResponse;
@@ -9,5 +9,5 @@ export interface AsyncCleanup {
 }
 
 export interface ExceptionCleanup {
-  (err: any): void;
+  (err: any): any;
 }
