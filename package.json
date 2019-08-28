@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "clean": "rm -rf ./dist/ && rm -rf tsconfig.build.tsbuildinfo",
+    "clean": "rimraf ./dist/ ./tsconfig.build.tsbuildinfo",
     "compile": "tsc -p tsconfig.json",
     "build": "npm run clean && npm run compile"
   },
@@ -41,6 +41,7 @@
     "@types/jest": "^24.0.18",
     "@types/node": "^11.13.19",
     "jest": "^24.9.0",
+    "rimraf": "^3.0.0",
     "ts-jest": "^24.0.2",
     "ts-node": "^8.3.0",
     "typescript": "^3.5.3"
