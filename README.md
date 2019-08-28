@@ -1,3 +1,8 @@
 # Guarding
 
+## Usages
+
+```typescript
+// TODO
+```
 

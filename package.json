@@ -1,12 +1,20 @@
 {
   "name": "guarding",
-  "version": "0.1.1",
+  "version": "0.9.0",
   "description": "",
   "main": "dist/index.js",
   "typings": "./dist/index.d.ts",
+  "files": [
+    "dist/",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "clean": "rm -rf ./dist/ && rm -rf tsconfig.build.tsbuildinfo",
+    "compile": "tsc -p tsconfig.json",
+    "build": "npm run clean && npm run compile"
   },
   "repository": {
     "type": "git",
@@ -25,16 +33,16 @@
     "url": "https://github.com/AaronJan/guarding/issues"
   },
   "homepage": "https://github.com/AaronJan/guarding#readme",
-  "dependencies": {
-    "debug": "^4.1.1"
+  "engines": {
+    "node": ">=10"
   },
   "devDependencies": {
-    "@types/debug": "^4.1.2",
-    "@types/jest": "^24.0.11",
-    "@types/node": "^11.11.1",
-    "jest": "^24.4.0",
-    "ts-jest": "^24.0.0",
-    "ts-node": "^8.0.3",
-    "typescript": "^3.3.3333"
+    "@types/debug": "^4.1.5",
+    "@types/jest": "^24.0.17",
+    "@types/node": "^11.13.19",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
   }
 }
