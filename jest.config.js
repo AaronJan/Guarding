@@ -3,4 +3,9 @@ module.exports = {
   testEnvironment: 'node',
   rootDir: './src',
   coverageDirectory: '../coverage',
+  globals: {
+    'ts-jest': {
+      diagnostics: false,
+    }
+  },
 };
