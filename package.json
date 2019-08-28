@@ -14,7 +14,8 @@
     "test": "jest",
     "clean": "rimraf ./dist/ ./tsconfig.build.tsbuildinfo",
     "compile": "tsc -p tsconfig.json",
-    "build": "npm run clean && npm run compile"
+    "build": "npm run clean && npm run compile",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
