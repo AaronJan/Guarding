@@ -9,7 +9,7 @@ export type UnhandledRejectionHandler = (reason: Error | any, promise: Promise<a
 
 export interface GuardConstructorOptions {
   routineCleanupEnabled: boolean,
-  routineCleanupSignals?: [SupportedSignals, ...SupportedSignals[]],
+  routineCleanupSignals?: SupportedSignals[],
   routineCleanups?: RoutineCleanup[],
   exceptionCleanupEnabled: boolean,
   exceptionCleanups?: ExceptionCleanup[],

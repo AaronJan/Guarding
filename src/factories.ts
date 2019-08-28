@@ -16,8 +16,7 @@ export function createGuard(options: CreateGuardOptions) {
   return new Guard({
     routineCleanupEnabled: options.routineCleanupEnabled,
     exceptionCleanupEnabled: options.exceptionCleanupEnabled,
-    // TODO: remove this convertion
-    routineCleanupSignals: <any>getRoutineSignalsForOptions(options),
+    routineCleanupSignals: getRoutineSignalsForOptions(options),
     routineCleanups: options.routineCleanups !== undefined ? options.routineCleanups : [],
     exceptionCleanups: options.exceptionCleanups !== undefined ? options.exceptionCleanups : [],
   });
@@ -32,7 +31,8 @@ export function getRoutineSignalsForOptions(options: CreateGuardOptions): Suppor
     return options.signals;
   }
 
-  switch (options.signals) {
+  const preset = options.signals !== undefined ? options.signals : 'default';
+  switch (preset) {
     case 'default':
       return DefaultRoutineSignals;
       break;
