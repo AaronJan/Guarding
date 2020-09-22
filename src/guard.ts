@@ -2,10 +2,10 @@ import { DefaultRoutineSignals } from './constants';
 import { executeInSerial } from './functions';
 import { SupportedSignals, RoutineCleanup, ExceptionCleanup } from './types';
 
-export type SignalHandler = (signal: SupportedSignals) => void;
-export type GeneralExceptionHandler = (err: Error | any) => void;
-export type UncaughtExceptionHandler = (err: Error) => void;
-export type UnhandledRejectionHandler = (reason: Error | any, promise: Promise<any>) => void;
+export type SignalHandler = (signal: SupportedSignals) => any;
+export type GeneralExceptionHandler = (err: Error | any) => any;
+export type UncaughtExceptionHandler = (err: Error) => any;
+export type UnhandledRejectionHandler = (reason: Error | any, promise: Promise<any>) => any;
 
 export interface GuardConstructorOptions {
   routineCleanupEnabled: boolean,
