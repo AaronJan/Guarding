@@ -35,16 +35,15 @@
   },
   "homepage": "https://github.com/AaronJan/guarding#readme",
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "devDependencies": {
     "@types/debug": "^4.1.5",
-    "@types/jest": "^24.0.18",
-    "@types/node": "^11.13.19",
-    "jest": "^24.9.0",
-    "rimraf": "^3.0.0",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^12.12.62",
+    "jest": "~24",
+    "rimraf": "^3.0.2",
     "ts-jest": "^24.0.2",
-    "ts-node": "^8.3.0",
-    "typescript": "^3.5.3"
+    "typescript": "^4.0.3"
   }
 }
